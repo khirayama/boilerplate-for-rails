@@ -1,0 +1,33 @@
+{
+  "name": "boilerplate-for-rails",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:markups": "gulp build:markups",
+    "watch:markups": "gulp watch:markups",
+    "build:styles": "gulp build:styles",
+    "watch:styles": "gulp watch:styles",
+    "build:scripts": "gulp build:scripts",
+    "watch:scripts": "gulp watch:scripts",
+    "build": "rm -rf dist && gulp build",
+    "watch": "rm -rf dist && gulp watch",
+    "server": "gulp server",
+    "develop": "rm -rf dist && gulp develop",
+    "lint": "eslint --ext=js --ext=jsx",
+    "test": "mocha --require=babel-core/register test/**/*.js",
+    "watch:test": "npm test -- --watch",
+    "start": "npm run develop"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.1",
+    "gulp-coffee": "^2.3.1",
+    "gulp-pleeease": "^2.0.2",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.2.0",
+    "gulp-slim": "^0.3.0"
+  }
+}
